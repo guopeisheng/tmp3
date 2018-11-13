@@ -1,0 +1,40 @@
+<p class='title'>  Welcome to RiceBook! </p>
+<p class='title'>You could login with username:pg23, password: key</p>
+
+<div class='center'><img src='/assets/rice.png' /></div>
+<div class='logForm'>
+  <form [formGroup]='loginForm'>
+    <table class='logTbl'>
+      <tr>
+        <td class='badge'>
+          <p>User Name: </p>
+        </td>
+        <td><input formControlName='userName' /></td>
+      </tr>
+      <tr>
+        <td class='badge'>
+          <p>Password: </p>
+        </td>
+        <td>
+          <input formControlName='password' type='password' />
+        </td>
+      </tr>
+    </table>
+    <button (click)='login()'>Login</button>
+    <p>
+      {{msg}}
+    </p>
+  </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class='regLink'>
+  <a routerLink='/register'>
+    Register!
+  </a>
+</div>

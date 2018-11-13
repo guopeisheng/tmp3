@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 69.0.3497 (Windows 10 0.0.0)" package="" timestamp="2018-10-18T03:44:22" id="0" hostname="LAPTOPGPS" tests="26" errors="0" failures="0" time="1.076">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"/>
+  </properties>
+  <testcase name="AppComponent should create the app" time="0.1" classname="Chrome_69_0_3497_(Windows_10_0_0_0).AppComponent"/>
+  <testcase name="DataService should fetch articles" time="0.085" classname="Chrome_69_0_3497_(Windows_10_0_0_0).DataService"/>
+  <testcase name="DataService should update the search keyword" time="0.004" classname="Chrome_69_0_3497_(Windows_10_0_0_0).DataService"/>
+  <testcase name="DataService should render articles" time="0.005" classname="Chrome_69_0_3497_(Windows_10_0_0_0).DataService"/>
+  <testcase name="DataService should dispatch actions to create a new article" time="0" classname="Chrome_69_0_3497_(Windows_10_0_0_0).DataService"/>
+  <testcase name="LoginComponent should create login component" time="0.112" classname="Chrome_69_0_3497_(Windows_10_0_0_0).LoginComponent"/>
+  <testcase name="LoginComponent  should log in a user" time="0.08" classname="Chrome_69_0_3497_(Windows_10_0_0_0).LoginComponent"/>
+  <testcase name="LoginComponent  should not log in a not-registered user" time="0.055" classname="Chrome_69_0_3497_(Windows_10_0_0_0).LoginComponent"/>
+  <testcase name="LoginComponent should update success message " time="0.051" classname="Chrome_69_0_3497_(Windows_10_0_0_0).LoginComponent"/>
+  <testcase name="LoginComponent should update error message " time="0.058" classname="Chrome_69_0_3497_(Windows_10_0_0_0).LoginComponent"/>
+  <testcase name="MainPageComponent should create main-page component" time="0.201" classname="Chrome_69_0_3497_(Windows_10_0_0_0).MainPageComponent"/>
+  <testcase name="MainPageComponent should add articles when adding a follower" time="0.13" classname="Chrome_69_0_3497_(Windows_10_0_0_0).MainPageComponent"/>
+  <testcase name="MainPageComponent should remove articles when removing a follower" time="0.085" classname="Chrome_69_0_3497_(Windows_10_0_0_0).MainPageComponent"/>
+  <testcase name="MainPageComponent should fetch the users proile information" time="0.082" classname="Chrome_69_0_3497_(Windows_10_0_0_0).MainPageComponent"/>
+  <testcase name="services resource should be a resource" time="0.003" classname="Chrome_69_0_3497_(Windows_10_0_0_0).services"/>
+  <testcase name="services resource should give me the http error" time="0.002" classname="Chrome_69_0_3497_(Windows_10_0_0_0).services"/>
+  <testcase name="services resource should be POSTable" time="0.001" classname="Chrome_69_0_3497_(Windows_10_0_0_0).services"/>
+  <testcase name="services should update error message" time="0.003" classname="Chrome_69_0_3497_(Windows_10_0_0_0).services"/>
+  <testcase name="services should update success message" time="0.003" classname="Chrome_69_0_3497_(Windows_10_0_0_0).services"/>
+  <testcase name="services should navigate" time="0.001" classname="Chrome_69_0_3497_(Windows_10_0_0_0).services"/>
+  <testcase name="SearchPipe should filter displayed articles by the search keyword" time="0.003" classname="Chrome_69_0_3497_(Windows_10_0_0_0).SearchPipe"/>
+  <testcase name="ValidateService should log in a user" time="0.003" classname="Chrome_69_0_3497_(Windows_10_0_0_0).ValidateService"/>
+  <testcase name="ValidateService should not log in an invalid user" time="0.007" classname="Chrome_69_0_3497_(Windows_10_0_0_0).ValidateService"/>
+  <testcase name="ValidateService should log out a user" time="0.001" classname="Chrome_69_0_3497_(Windows_10_0_0_0).ValidateService"/>
+  <testcase name="ValidateService should fetch the user's profile information" time="0.001" classname="Chrome_69_0_3497_(Windows_10_0_0_0).ValidateService"/>
+  <testcase name="ValidateService should update headline" time="0" classname="Chrome_69_0_3497_(Windows_10_0_0_0).ValidateService"/>
+  <system-out>
+    <![CDATA[Chrome 69.0.3497 (Windows 10 0.0.0) ERROR
+  Disconnectedundefined
+,Chrome 69.0.3497 (Windows 10 0.0.0) ERROR: 'Unhandled Promise rejection:', 'Cannot match any routes. URL Segment: 'mainpage'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', Error{__zone_symbol__currentTask: ZoneTask{_zone: Zone{_properties: ..., _parent: ..., _name: ..., _zoneDelegate: ...}, runCount: 0, _zoneDelegates: null, _state: 'notScheduled', type: 'microTask', source: 'Promise.then', data: undefined, scheduleFn: undefined, cancelFn: null, callback: function () { ... }, invoke: function () { ... }}}, 'Error: Cannot match any routes. URL Segment: 'mainpage'
+    at ApplyRedirects.webpackJsonp.../../../router/@angular/router.es5.js.ApplyRedirects.noMatchError (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/@angular/router/@angular/router.es5.js:1466:1)
+    at CatchSubscriber.selector (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/@angular/router/@angular/router.es5.js:1441:1)
+    at CatchSubscriber.webpackJsonp.../../../../rxjs/operator/catch.js.CatchSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/operator/catch.js:104:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber._error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:128:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber.error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:102:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber._error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:128:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber.error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:102:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber._error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:128:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber.error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:102:1)
+    at LastSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber._error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:128:1)'
+,Chrome 69.0.3497 (Windows 10 0.0.0) ERROR: 'Unhandled Promise rejection:', 'Cannot match any routes. URL Segment: 'mainpage'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', Error{__zone_symbol__currentTask: ZoneTask{_zone: Zone{_properties: ..., _parent: ..., _name: ..., _zoneDelegate: ...}, runCount: 0, _zoneDelegates: null, _state: 'notScheduled', type: 'microTask', source: 'Promise.then', data: undefined, scheduleFn: undefined, cancelFn: null, callback: function () { ... }, invoke: function () { ... }}}, 'Error: Cannot match any routes. URL Segment: 'mainpage'
+    at ApplyRedirects.webpackJsonp.../../../router/@angular/router.es5.js.ApplyRedirects.noMatchError (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/@angular/router/@angular/router.es5.js:1466:1)
+    at CatchSubscriber.selector (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/@angular/router/@angular/router.es5.js:1441:1)
+    at CatchSubscriber.webpackJsonp.../../../../rxjs/operator/catch.js.CatchSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/operator/catch.js:104:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber._error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:128:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber.error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:102:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber._error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:128:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber.error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:102:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber._error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:128:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber.error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:102:1)
+    at LastSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber._error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:128:1)'
+,Chrome 69.0.3497 (Windows 10 0.0.0) ERROR: 'Unhandled Promise rejection:', 'Cannot match any routes. URL Segment: 'mainpage'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', Error{__zone_symbol__currentTask: ZoneTask{_zone: Zone{_properties: ..., _parent: ..., _name: ..., _zoneDelegate: ...}, runCount: 0, _zoneDelegates: null, _state: 'notScheduled', type: 'microTask', source: 'Promise.then', data: undefined, scheduleFn: undefined, cancelFn: null, callback: function () { ... }, invoke: function () { ... }}}, 'Error: Cannot match any routes. URL Segment: 'mainpage'
+    at ApplyRedirects.webpackJsonp.../../../router/@angular/router.es5.js.ApplyRedirects.noMatchError (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/@angular/router/@angular/router.es5.js:1466:1)
+    at CatchSubscriber.selector (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/@angular/router/@angular/router.es5.js:1441:1)
+    at CatchSubscriber.webpackJsonp.../../../../rxjs/operator/catch.js.CatchSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/operator/catch.js:104:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber._error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:128:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber.error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:102:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber._error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:128:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber.error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:102:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber._error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:128:1)
+    at MapSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber.error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:102:1)
+    at LastSubscriber.webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber._error (http://localhost:9876/_karma_webpack_/webpack:/E:/OneDrive - rice.edu/Study-Rice/COMP531-Web/hw5/HW-5/node_modules/rxjs/Subscriber.js:128:1)'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

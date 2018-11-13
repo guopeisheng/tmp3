@@ -1,0 +1,98 @@
+<div class='logLink'>
+
+  <a routerLink='/profile'>Profile</a>
+  <a routerLink='/login'>Log Out</a>
+</div>
+
+<div class='mainFolo'>
+
+  <div class='userFolo'>
+
+    <div class='userInfo'>
+      <div>
+        <img src='{{headshot}}' />
+      </div>
+      <p class='userName'>
+        {{user?.displayName}}
+      </p>
+      <p class='userStatus'>
+        {{userStatus}}
+      </p>
+      <input [(ngModel)]='newStatus' placeholder="Your new status?" /><br />
+      <button (click)='updateStatus()'>Change status</button>
+    </div>
+  </div>
+
+  <div class='followers'>
+    <div *ngFor='let fo of sfollowers; let i = index'>
+      <div>
+        <img src='{{fo.img}}' />
+      </div>
+      <p class='floName'>
+        {{fo?.name}}
+      </p>
+      <p class='floStatus'>
+        {{fo?.status}}
+      </p>
+      <div>
+        <button (click)='remove(i)'>Remove</button>
+      </div>
+    </div>
+    <div class='addFlo'>
+      <input [(ngModel)]='addName' class='addName' />
+      <button class='addFloBtn' (click)='addFlo()'>Follow</button>
+    </div>
+  </div>
+</div>
+
+
+<div class='postTest'>
+  <input type='file' class='inputImg' />
+  <input type='text' [(ngModel)]='inputTxt' class='inputTxt' placeholder="please post here!" /><br />
+  <button (click)='clearTxt()' class='clearBtn'>Cancel</button>
+  <button class='postBtn' (click)='newPost()'>Post</button>
+  <input type="checkbox" [(ngModel)]='textonly' />Text Only
+</div>
+
+
+<div class='searchArea'>
+  <input class='search_input' [(ngModel)]='searchKey' placeholder="Search for posts here!" />
+</div>
+
+
+<div class='postArea'>
+
+  <div class='post'>
+    <table class='postTbl'>
+
+      <!-- pipe类似于angular1里的filter，即把输入的东西扔进pipe/filter函数，在对得到的结果进行操作 -->
+      <!-- 原本没加括号，我以为是pipe是作用在于for loop的每个元素，实际上是作用于spots，先给spots筛选一遍 -->
+      <div *ngFor='let post of (sposts|search:searchKey); let i = index'> 
+        <tr>
+          <td>
+            {{post?.author}}
+          </td>
+          <td>
+            <p>
+              {{post?.content}}
+            </p>
+          </td>
+          <td *ngIf="post.img!=''">
+            <img src='{{post.img}}' />
+          </td>
+        </tr>
+        <div class='comments' *ngIf='!comments[i]'>
+          Some comments<br />Some other comments
+        </div>
+
+        <div class='buttons'>
+          <button>Comment</button>
+          <button>Edit</button>
+          <button (click)='hideAndShow(i)'>Hide/Show Comments</button>
+        </div>
+
+      </div>
+
+    </table>
+  </div>
+</div>

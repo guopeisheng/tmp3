@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/app/profile/profile.component.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\index.html">All files</a> / <a href="index.html">src/app/profile</a> profile.component.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">25% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>12/48</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">21.43% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>6/28</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">25% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">21.74% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>10/46</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Component, OnInit } from '@angular/core';
+import { User } from '../user';
+import { Router } from '@angular/router';
+import { DataService } from '../data.service';
+import { ValidateService } from '../validate.service';
+import { FormControl, FormGroup } from '@angular/forms';
+import { images } from '../images';
+&nbsp;
+@Component({
+  selector: 'app-profile',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.css']
+})
+export class ProfileComponent implements OnInit {
+&nbsp;
+  user: User;
+  headshot: string;
+  warnMsg: string[];
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  updaForm = new FormGroup({</span>
+    userName: new FormControl(''),
+    displayName: new FormControl(''),
+    email: new FormControl(''),
+    phoneNum: new FormControl(''),
+    zipcode: new FormControl(''),
+    password: new FormControl('')
+  });
+&nbsp;
+  //validate before update
+<span class="fstat-no" title="function not covered" >  update(): void {</span>
+<span class="cstat-no" title="statement not covered" >    this.validateService.clear();</span>
+&nbsp;
+    let userName = <span class="cstat-no" title="statement not covered" >this.updaForm.get('userName').value;</span>
+    let displayName = <span class="cstat-no" title="statement not covered" >this.updaForm.get('displayName').value;</span>
+    let email = <span class="cstat-no" title="statement not covered" >this.updaForm.get('email').value;</span>
+    let phoneNum = <span class="cstat-no" title="statement not covered" >this.updaForm.get('phoneNum').value;</span>
+    let zipcode = <span class="cstat-no" title="statement not covered" >this.updaForm.get('zipcode').value;</span>
+    let password = <span class="cstat-no" title="statement not covered" >this.updaForm.get('password').value;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (userName) {</span>
+<span class="cstat-no" title="statement not covered" >      if (this.validateService.userName(userName)) {</span>
+<span class="cstat-no" title="statement not covered" >        this.user.userName = userName;</span>
+<span class="cstat-no" title="statement not covered" >        this.dataService.user.userName = userName;</span>
+      }
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (displayName) {</span>
+<span class="cstat-no" title="statement not covered" >      this.user.displayName = displayName;</span>
+<span class="cstat-no" title="statement not covered" >      this.dataService.user.displayName = displayName;</span>
+&nbsp;
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (email) {</span>
+<span class="cstat-no" title="statement not covered" >      if (this.validateService.email(email)) {</span>
+<span class="cstat-no" title="statement not covered" >        this.user.email = email;</span>
+<span class="cstat-no" title="statement not covered" >        this.dataService.user.email = email;</span>
+      }
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (phoneNum) {</span>
+<span class="cstat-no" title="statement not covered" >      if (this.validateService.phoneNum(phoneNum)) {</span>
+<span class="cstat-no" title="statement not covered" >        this.user.phoneNum = phoneNum;</span>
+<span class="cstat-no" title="statement not covered" >        this.dataService.user.phoneNum = phoneNum;</span>
+      }
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (zipcode) {</span>
+<span class="cstat-no" title="statement not covered" >      if (this.validateService.zipcode(zipcode)) {</span>
+<span class="cstat-no" title="statement not covered" >        this.user.zipcode = zipcode;</span>
+<span class="cstat-no" title="statement not covered" >        this.dataService.user.zipcode = zipcode;</span>
+      }
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (password) {</span>
+<span class="cstat-no" title="statement not covered" >      this.user.password = password;</span>
+<span class="cstat-no" title="statement not covered" >      this.dataService.user.password = password;</span>
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    this.warnMsg = this.validateService.warnMessage;</span>
+&nbsp;
+  }
+&nbsp;
+&nbsp;
+<span class="fstat-no" title="function not covered" >  constructor(</span>
+    private <span class="cstat-no" title="statement not covered" >dataService: DataService<span class="branch-1 cbranch-no" title="branch not covered" >,</span></span>
+    private <span class="cstat-no" title="statement not covered" >validateService: ValidateService<span class="branch-2 cbranch-no" title="branch not covered" ></span></span>
+  ) { <span class="cstat-no" title="statement not covered" >this.user = new User('pg23', 'key') </span>}
+&nbsp;
+<span class="fstat-no" title="function not covered" >  ngOnInit() {</span>
+<span class="cstat-no" title="statement not covered" >    this.user = this.dataService.getUser();</span>
+<span class="cstat-no" title="statement not covered" >    this.headshot = images[0];</span>
+  }
+&nbsp;
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Oct 17 2018 22:44:23 GMT-0500 (Central Daylight Time)
+</div>
+</div>
+<script src="..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\sorter.js"></script>
+</body>
+</html>

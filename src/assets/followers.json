@@ -1,0 +1,8 @@
+{
+  "followers": [
+    {"id": 0, "name": "pg23", "status": "LPL is the best region.", "img": "/assets/2.jpg"},
+    {"id": 1, "name": "wl49", "status": "Tasty Milk Tea.", "img": "/assets/3.jpg"},
+    {"id": 2, "name": "qz25", "status": "OMG!50HP!", "img": "/assets/4.jpg"},
+    {"id": 3, "name": "zl52", "status": "Edward Gaming", "img": "/assets/5.jpg"}
+  ]
+}
